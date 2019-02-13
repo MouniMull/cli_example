@@ -43,7 +43,9 @@ class CLI
   end
 
   def get_input
-    gets.chomp
+    input = gets
+    input ||= ''
+    input.chomp
   end
 
   def sayhi
